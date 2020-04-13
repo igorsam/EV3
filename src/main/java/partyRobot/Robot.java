@@ -28,7 +28,7 @@ public class Robot {
         }));
 
         System.out.println("Defining Running-Duration of Motors");
-        final int durationAB = 10000;
+        final int durationAB = 8000;
         final int durationServo = 2000;
 
         System.out.println("Defining the Stop mode");
@@ -37,8 +37,8 @@ public class Robot {
         servoMotor.brake();
 
         System.out.println("Defining basic motor speed");
-        final int basicMotorSpeed = 200;
-        servoMotor.setSpeed(basicMotorSpeed);
+        final int servoMotorSpeed = 200;
+        servoMotor.setSpeed(servoMotorSpeed);
 
         System.out.println("Defining motor speed");
         final int motorSpeedForward = 500;
@@ -60,6 +60,18 @@ public class Robot {
         motorLeft.stop();
         motorRight.stop();
 
+        Delay.msDelay(1000);
+
+        System.out.println("Open servo motor");
+        servoMotor.backward();
+
+        Delay.msDelay(durationServo);
+
+        System.out.println("Stop basic motor");
+        servoMotor.stop();
+
+        Delay.msDelay(5000);
+
         System.out.println("Defining motor backward speed");
         final int motorSpeedBackward = 250;
         motorLeft.setSpeed(motorSpeedBackward);
@@ -74,14 +86,6 @@ public class Robot {
         System.out.println("Stop motors A & B");
         motorLeft.stop();
         motorRight.stop();
-
-        System.out.println("Open basic motor");
-        servoMotor.backward();
-
-        Delay.msDelay(durationServo);
-
-        System.out.println("Stop basic motor");
-        servoMotor.stop();
 
         System.out.println("Checking Battery");
         System.out.println("Votage: " + Battery.getInstance().getVoltage());
