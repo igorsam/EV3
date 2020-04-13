@@ -1,4 +1,4 @@
-package example.programming;
+package partyRobot.programming;
 
 public class HelloWorld {
 

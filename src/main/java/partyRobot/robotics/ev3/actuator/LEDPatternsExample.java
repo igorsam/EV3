@@ -1,4 +1,4 @@
-package example.robotics.ev3.actuator;
+package partyRobot.robotics.ev3.actuator;
 
 import ev3dev.actuators.ev3.EV3Led;
 import lejos.hardware.LED;

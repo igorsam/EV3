@@ -29,7 +29,7 @@ This repository stores a template project about `EV3Dev-lang-java`.
 Once you download in your computer the project,
 open your favourite Java IDE ( [Eclipse](https://eclipse.org/home/index.php) or [IntelliJ](https://www.jetbrains.com/idea/))
 to import this [Gradle](https://gradle.org/) project. The project includes latest dependencies and
-an example ready to be deployed on your Robot using the `core` library from `EV3Dev-lang-java`.
+an partyRobot ready to be deployed on your Robot using the `core` library from `EV3Dev-lang-java`.
 
 The project includes some tasks to reduce the time to deploy on your robot.
 

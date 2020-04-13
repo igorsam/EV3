@@ -1,4 +1,4 @@
-package example.programming;
+package partyRobot.programming;
 
 import ev3dev.actuators.LCD;
 import ev3dev.utils.JarResource;

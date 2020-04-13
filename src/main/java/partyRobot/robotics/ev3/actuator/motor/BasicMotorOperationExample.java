@@ -1,4 +1,4 @@
-package example.robotics.ev3.actuator.motor;
+package partyRobot.robotics.ev3.actuator.motor;
 
 import ev3dev.actuators.lego.motors.EV3LargeRegulatedMotor;
 import lejos.hardware.port.MotorPort;

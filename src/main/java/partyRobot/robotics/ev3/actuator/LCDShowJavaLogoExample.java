@@ -1,4 +1,4 @@
-package example.robotics.ev3.actuator;
+package partyRobot.robotics.ev3.actuator;
 
 import ev3dev.actuators.LCD;
 import ev3dev.hardware.EV3DevDistro;

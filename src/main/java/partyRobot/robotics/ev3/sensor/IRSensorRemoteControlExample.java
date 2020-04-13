@@ -1,4 +1,4 @@
-package example.robotics.ev3.sensor;
+package partyRobot.robotics.ev3.sensor;
 
 import ev3dev.actuators.lego.motors.EV3LargeRegulatedMotor;
 import ev3dev.sensors.ev3.EV3IRSensor;
