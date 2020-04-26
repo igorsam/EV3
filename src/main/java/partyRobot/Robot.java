@@ -29,7 +29,7 @@ public class Robot {
 
         System.out.println("Defining Running-Duration of Motors");
         final int durationAB = 8000;
-        final int durationServo = 2000;
+        final int durationServo = 1300;
 
         System.out.println("Defining the Stop mode");
         motorLeft.brake();
@@ -49,6 +49,9 @@ public class Robot {
         servoMotor.forward();
 
         Delay.msDelay(durationServo);
+
+        System.out.println("Stop servo motor");
+        servoMotor.stop();
 
         System.out.println("Go Forward with the motors A & B");
         motorLeft.forward();
